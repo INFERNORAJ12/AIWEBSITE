@@ -1,0 +1,16 @@
+#AImain{
+    background: rgb(28,17,248);
+    background: linear-gradient(to right,0deg, rgba(28,17,248,1) 26%, rgba(75,173,254,0.768032212885154) 84%);
+
+    
+    height: 100vh;
+}
+#mainMessage{
+    background: rgb(0,199,255);
+    background: linear-gradient(0deg, rgba(0,199,255,1) 0%, rgba(45,69,253,1) 100%);
+}
+#inputdiv{
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+}
