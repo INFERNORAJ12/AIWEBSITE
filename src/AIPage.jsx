@@ -38,7 +38,7 @@ function AIPage() {
   let send=async()=>{
     
     // post data link put in this
-   let data=await fetch("",{
+   let data=await fetch("https://vj97ids0qb.execute-api.us-west-2.amazonaws.com",{
       method:"post",
       headers:{
         "Content-Type":"application/json"
@@ -60,7 +60,7 @@ function AIPage() {
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const server = await fetch("");//data come from AI
+            const server = await fetch("https://vj97ids0qb.execute-api.us-west-2.amazonaws.com");//data come from AI
             const data = await server.json();
             setDatas(data);
         } catch (error) {
