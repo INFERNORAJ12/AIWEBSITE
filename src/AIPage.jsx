@@ -43,7 +43,7 @@ function AIPage() {
       headers:{
         "Content-Type":"application/json"
       },
-    body:JSON.stringify({ip})
+    body:JSON.stringify({user_input})
     })
     
     let clear=document.getElementById("changescolor").value=" ";
