@@ -38,12 +38,12 @@ function AIPage() {
   let send=async()=>{
     
     // post data link put in this
-   let data=await fetch("https://vj97ids0qb.execute-api.us-west-2.amazonaws.com",{
+   let data=await fetch("https://2iiiurnolh.execute-api.us-west-2.amazonaws.com/prod",{
       method:"post",
       headers:{
         "Content-Type":"application/json"
       },
-    body:JSON.stringify({user_input})
+    body:JSON.stringify({ip})
     })
     
     let clear=document.getElementById("changescolor").value=" ";
@@ -60,7 +60,7 @@ function AIPage() {
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const server = await fetch("https://vj97ids0qb.execute-api.us-west-2.amazonaws.com");//data come from AI
+            const server = await fetch("https://2iiiurnolh.execute-api.us-west-2.amazonaws.com/prod");//data come from AI
             const data = await server.json();
             setDatas(data);
         } catch (error) {
