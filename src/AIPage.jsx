@@ -64,7 +64,7 @@ function AIPage() {
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const server = await fetch("https://2iiiurnolh.execute-api.us-west-2.amazonaws.com/prod");//data come from AI
+            const server = await fetch("https://2iiiurnolh.execute-api.us-west-2.amazonaws.com/prod/post");//data come from AI
             const data = await server.json();
             setDatas(data);
         } catch (error) {
