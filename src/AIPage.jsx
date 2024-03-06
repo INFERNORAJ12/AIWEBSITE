@@ -39,11 +39,15 @@ function AIPage() {
     
     // post data link put in this
    let data=await fetch("https://2iiiurnolh.execute-api.us-west-2.amazonaws.com/prod",{
+    
       method:"post",
       headers:{
         "Content-Type":"application/json"
       },
-    body:JSON.stringify({user_input})
+    {
+  "queryStringParameters": {
+    "user_input": JSON.stringify({user_input})
+  }}
     })
     
     let clear=document.getElementById("changescolor").value=" ";
